@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="git_tuto" type="talker" name="talker" output="screen"> </node>
+</launch>
