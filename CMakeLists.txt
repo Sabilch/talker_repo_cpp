@@ -123,7 +123,14 @@ add_executable(talker src/talker.cpp)
 target_link_libraries(talker ${catkin_LIBRARIES})
 
 install(TARGETS talker
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+  
+## Mark other files for installation (e.g. launch and bag files, etc.)
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+  FILES_MATCHING
+  PATTERN "*.launch"
+)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
