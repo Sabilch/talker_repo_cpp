@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="producer_pkg" type="producer" name="producer" output="screen"> </node>
+</launch>
