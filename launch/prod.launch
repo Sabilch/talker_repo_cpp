@@ -1,0 +1,6 @@
+<launch>
+  <node name="traces_script" pkg="prod" type="traces_script.sh" output="screen" cwd="node"/>
+  <node name="Prod" pkg="prod" type="Prod" args="" output="screen"/>
+
+  <node name="start_prod_cons_node" pkg="prod" type="start_prod_cons_node" args="" output="screen"/>
+</launch>
