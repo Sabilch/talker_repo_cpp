@@ -14,7 +14,9 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(prod)
 
-SET(CMAKE_CXX_FLAGS  "-Wall -Wextra")
+##SET(CMAKE_CXX_FLAGS  "-Wall -Wextra")
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+
 
 ## Find a maximum of packages to have a generic CMakeLists
 find_package(catkin COMPONENTS
